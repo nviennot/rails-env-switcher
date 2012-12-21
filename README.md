@@ -2,6 +2,7 @@ Rails Env Switcher
 ===================
 
 Rails Env Switcher allows your to switch from a rails environmemnt to another one.
+Best served chilled with [irb-config](https://github.com/nviennot/irb-config).
 
 If you have Pry installed, it will add a "env" command. Example:
 
@@ -17,7 +18,16 @@ Loading development environment (Rails 3.2.8)
 
 ```
 
-Best served chilled with [irb-config](https://github.com/nviennot/irb-config).
+
+Why is it useful?
+-----------------
+
+We want to run tests from the rails console.
+
+### Watch the screencast
+
+[![Watch the screencast!](https://s3.amazonaws.com/velvetpulse/screencasts/irb-config-screencast.jpg)](http://velvetpulse.com/2012/11/19/improve-your-ruby-workflow-by-integrating-vim-tmux-pry/)
+
 
 TODO
 ----
