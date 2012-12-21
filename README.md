@@ -32,8 +32,8 @@ We want to run tests from the rails console.
 TODO
 ----
 
-Testing
-
+* Middleware pattern
+* Testing
 
 License
 -------

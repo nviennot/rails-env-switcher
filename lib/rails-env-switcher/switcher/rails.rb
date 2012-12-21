@@ -1,5 +1,5 @@
 module RailsEnvSwitcher::Switcher::Rails
-  def self.switch_env(old_env, env)
+  def self.switch_env(old_env, env, options={})
     if ::Rails.env != env
       ENV['RAILS_ENV'] = env
       ::Rails.env = env
