@@ -1,0 +1,2 @@
+module RailsEnvSwitcher
+end
