@@ -3,7 +3,8 @@ module RailsEnvSwitcher::Switcher::Reloader
     # delete because we don't necessarily want to reload when we go back to
     # the original environment
     if options.delete(:reload)
-      reload!(false) if respond_to?(:reload!)
+      ActionDispatch::Reloader.cleanup!
+      ActionDispatch::Reloader.prepare!
       FactoryGirl.reload if defined?(FactoryGirl)
     end
   end
