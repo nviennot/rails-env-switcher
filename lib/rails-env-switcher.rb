@@ -11,6 +11,7 @@ module RailsEnvSwitcher
       switch_env(env, options)
       yield
     ensure
+      options.delete(:reload) # not reloading again once we switch back
       switch_env(old_env, options)
     end
   end
@@ -22,6 +23,9 @@ module RailsEnvSwitcher
       self.handlers.each do |handler|
         handler.switch_env(old_env, env, options)
       end
+    else
+      # Always reload if needed
+      Switcher::Reloader.switch_env(env, env, options)
     end
   end
 
