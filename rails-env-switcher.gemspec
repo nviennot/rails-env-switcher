@@ -14,8 +14,6 @@ Gem::Specification.new do |s|
   s.summary     = "Switch from a Rails environment to another"
   s.description = "Switch from a Rails environment to another"
 
-  s.add_dependency 'rails', '>= 3.0.0'
-
   s.files        = Dir["lib/**/*"] + ['README.md']
   s.require_path = 'lib'
   s.has_rdoc     = false

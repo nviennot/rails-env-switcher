@@ -29,7 +29,7 @@ module RailsEnvSwitcher
     end
   end
 
-  mattr_accessor :handlers
+  class << self; attr_accessor :handlers; end
   self.handlers = []
   def self.add_handler(handler)
     self.handlers << handler
